@@ -5,7 +5,7 @@ def my_all?(collection)
   block_return_values = []
   while i < collection.length
     i = i + 1
-    block_return_values << yield(collection[i])
+      block_return_values << yield(collection[i])
   end
 
   if block_return_values.include?(false)
