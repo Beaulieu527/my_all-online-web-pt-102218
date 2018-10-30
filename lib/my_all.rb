@@ -6,7 +6,12 @@ def my_all?(collection)
   while i < collection.length
     i += 1
     block_return_values << yield(collection[i])
-
   end
+  if block_return_values.include?(false)
+    false
+  else
+    true
+  end
+    
 
 end
